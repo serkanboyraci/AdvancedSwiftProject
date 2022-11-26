@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+
+struct MusicianStruct {
+    var name : String
+    var age : Int
+    var instrument : String
+}
+// there isnt any init func. it means free init structure.
+
+
