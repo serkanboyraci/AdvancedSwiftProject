@@ -28,3 +28,27 @@ structSerkan.age = 40
 // if you want change it, you must define as var structSerkan
 print(structSerkan.age)
 
+// REFERENCE vs VALUE
+
+let copyOfclassSerkan = classSerkan
+
+var copyOfstructSerkan = structSerkan
+
+print(copyOfclassSerkan.name)
+
+print(copyOfstructSerkan.name)
+
+copyOfclassSerkan.name = "ali serkan"
+copyOfstructSerkan.name = "ali serkan"
+
+print(copyOfclassSerkan.name)
+print(copyOfstructSerkan.name)
+
+print(classSerkan.name) //changed original name parameter
+print(structSerkan.name)
+
+// Reference Types -> Class
+// Copy -> Same object new reference in HEAP, changed original one. -> 1 object + 2 reference
+
+// Value Types -> Struct
+// Copy -> new object -> 2 object + 2 references
