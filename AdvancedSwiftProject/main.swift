@@ -63,3 +63,35 @@ print(classSerkan.age)
 print(structSerkan.age)
 structSerkan.happyBirthday() // if you want to change parameter in func, you have to define func as MUTATING FUNC
 print(structSerkan.age)
+
+
+
+// TUPLE
+
+let myTuple = (1,3)
+print(myTuple.0) // to reach the element of tuple, you will write its order.
+
+//let myTuple2 = (1,3,5)
+var myTuple2 = (1,3,5)
+myTuple2.2 = 10 // if you write tuple with let, you cant change its element
+print(myTuple2.2)
+
+let myTuple3 = ("serkan", 100) // you can define string and Int together
+print(myTuple3)
+
+let myTuple4 = (10, [10,20,30]) // you can write array as a element
+print(myTuple4.1[2]) // to reach second elemnt in array, you have to use square brackets
+
+let myString : String
+
+let predefinedTuple : (String, String, Int) // you can use also predefined tuple like this
+predefinedTuple.0 = "ali"
+predefinedTuple.1 = "serkan"
+predefinedTuple.2 = 35
+print(predefinedTuple)
+
+let rockTuple = (name:"JAMES", metallica:true, inst:"guitar") // you can define tuple parameters orders as a String
+print(rockTuple.name)
+print(rockTuple.metallica)
+print(rockTuple.inst)
+
