@@ -19,14 +19,14 @@ var structSerkan = MusicianStruct(name: "serkan", age: 35, instrument: "guitar")
 
 
 // IMMUTABLE STRUCT
-classSerkan.age = 40
+classSerkan.instrument = "flute"
 // you can easily change it, class is mutable even if it is define as let
-print(classSerkan.age)
+print(classSerkan.instrument)
 
-structSerkan.age = 40
+structSerkan.instrument = "flute"
 // if you define let structSerkan you can not change it, it is IMMUTABLE
 // if you want change it, you must define as var structSerkan
-print(structSerkan.age)
+print(structSerkan.instrument)
 
 // REFERENCE vs VALUE
 
@@ -52,3 +52,14 @@ print(structSerkan.name)
 
 // Value Types -> Struct
 // Copy -> new object -> 2 object + 2 references
+
+
+// FUNCTION AND MUTATING FUNCTION
+
+print(classSerkan.age)
+classSerkan.happyBirthday() // you can easily change original parameter in func
+print(classSerkan.age)
+
+print(structSerkan.age)
+structSerkan.happyBirthday() // if you want to change parameter in func, you have to define func as MUTATING FUNC
+print(structSerkan.age)
