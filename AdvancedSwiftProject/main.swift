@@ -157,3 +157,15 @@ default :
 }
 
 
+// BREAKPOINT
+
+var x = 5
+
+print(x)
+
+x += 1
+
+print(x)
+
+// if you want to finsh when you see 5 as a result, but you couldnt see. you can clicked at side of code area at line numbers
+// it means breakpoint. if you see 5, you can erase it with swiping. and add one more breakpoint tooping line numbers.
