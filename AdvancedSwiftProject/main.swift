@@ -119,3 +119,41 @@ func convertToIntegerIf (stringInput : String) -> Int {
 print(convertToIntegerGuard(stringInput: myNumber))
 print(convertToIntegerIf(stringInput: myNumber))
 // you will take same result.
+
+
+
+// REMAINDER
+
+let myNum = 11
+
+let myRemainder = myNum % 4
+
+if myRemainder == 1 {
+    print("it's 1")
+} else if myRemainder == 2 {
+    print("it's 2")
+} else if myRemainder == 3 {
+    print("it's 3")
+}
+
+switch myRemainder { // it s the same woth above but easy to write.
+case 1 :
+    print("it's 1")
+case 2 :
+    print("it's 2")
+case 3 :
+    print("it's 3")
+default :
+    print("None of the above")
+}
+
+switch myRemainder { //  also you can use it like this.
+case 1...3 :
+    print("it's 1-3")
+case 4 :
+    print("it's 4")
+default :
+    print("None of the above")
+}
+
+
