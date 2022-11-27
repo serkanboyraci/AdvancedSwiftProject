@@ -95,3 +95,27 @@ print(rockTuple.name)
 print(rockTuple.metallica)
 print(rockTuple.inst)
 
+// GUARD LET & IF LET
+
+// Guard -> Negative && More Self-Confident
+// If -> Positive && More Safe
+
+let myNumber = "ali"
+
+func convertToIntegerGuard (stringInput : String) -> Int {
+    guard let myInteger = Int(stringInput) else { // guard let thinks that, you have to/must do this converting
+        return 0
+    }
+    return myInteger
+}
+
+func convertToIntegerIf (stringInput : String) -> Int {
+    if let myInteger = Int(stringInput) {
+        return myInteger
+    } else {
+        return 0
+    }
+}
+print(convertToIntegerGuard(stringInput: myNumber))
+print(convertToIntegerIf(stringInput: myNumber))
+// you will take same result.
