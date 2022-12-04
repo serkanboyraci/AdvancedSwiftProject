@@ -8,7 +8,7 @@
 import Foundation
 
 class MusicianClass {
-    var name : String
+    var name : String //you should use let, beacuse these lines must be sth.
     var age : Int
     var instrument : String
     
